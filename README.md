@@ -5,3 +5,5 @@ Mustang Race 2019
 ## First Chapter Title
 
 Visit website [here] (http://mustangrace.com.pl/)
+
+### Mustang Race details for attendess!
