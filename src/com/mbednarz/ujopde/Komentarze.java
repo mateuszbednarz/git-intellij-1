@@ -5,7 +5,7 @@ package com.mbednarz.ujopde;/*
  */
 
 /*
-  @author Mateusz
+  @author Mateusz Bednarz
  */
 
 /* 
