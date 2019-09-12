@@ -8,7 +8,10 @@ package com.mbednarz.ujopde;/*
   @author Mateusz Bednarz
  */
 
-/* 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+/*
 
 
 fasfas
@@ -26,6 +29,8 @@ public class Komentarze {
      */
     public static void main(String[] args) {
         //to jest komentarz jednoliniowy
+
+        //WebDriver driver = new FirefoxDriver();
        
     }
     
