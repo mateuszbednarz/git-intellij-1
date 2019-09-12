@@ -6,6 +6,5 @@ public class NewPckgClass {
     public static void main(String[] args) {
         ValueTest.a = 20;
         System.out.println("Result: " + ValueTest.a);
-
     }
 }
