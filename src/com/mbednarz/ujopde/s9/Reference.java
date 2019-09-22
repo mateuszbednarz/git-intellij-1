@@ -7,7 +7,10 @@ public class Reference {
         int a = 53;
         int b = a;
 
+        //b = 30;
+
         System.out.println("Value of 'a': " + a);
+        System.out.println("Value of 'b': " + b);
 
         RefTest rtValue = new RefTest();
         /* pod 'rtValue' nie znajduje się żadna wartość 'zwykła' (typ prymitywny) , ale ADRES.
