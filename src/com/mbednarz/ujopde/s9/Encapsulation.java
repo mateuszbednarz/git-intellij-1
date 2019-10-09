@@ -15,7 +15,6 @@ public class Encapsulation {
         else
             System.out.println("Not enough money to make a wihdraw!");
 
-
         System.out.println("Balance ($): " + savingAccount.getBalance());
     }
 }
@@ -43,12 +42,12 @@ class BankAccount
         return true;
     }
 
-    boolean withdraw(int withdrawAmount)
+    boolean withdraw(int withdrawalAmount)
     {
-        if (balance < withdrawAmount)
+        if (balance < withdrawalAmount)
             return false;
         else
-            setBalance(balance - withdrawAmount);
+            setBalance(balance - withdrawalAmount);
 
         return true;
     }
