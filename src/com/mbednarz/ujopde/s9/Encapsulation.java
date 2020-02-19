@@ -1,10 +1,11 @@
-package com.mbednarz.ujopde.s9;
 
+package com.mbednarz.ujopde.s9;
+/*
 public class Encapsulation {
 
     public static void main(String[] args) {
 
-        BankAccount savingAccount = new BankAccount();
+        BankAccountEx savingAccount = new BankAccountEx();
 
         savingAccount.makeDeposit(5000);
 
@@ -18,7 +19,9 @@ public class Encapsulation {
         System.out.println("Balance ($): " + savingAccount.getBalance());
     }
 }
+*/
 
+/*
 class BankAccount
 {
     public BankAccount()
@@ -35,9 +38,6 @@ class BankAccount
 
     private boolean setBalance(int balance)
     {
-        /*
-        !SECURITY CONDITIONS!
-         */
         this.balance = balance;
         return true;
     }
@@ -58,3 +58,4 @@ class BankAccount
         return true;
     }
 }
+*/
