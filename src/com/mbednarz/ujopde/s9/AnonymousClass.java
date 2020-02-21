@@ -12,12 +12,28 @@ public class AnonymousClass
     public static void main(String[] args)
     {
         AfterClickEvent ace = () -> System.out.println("Anonymous class EVENT!");
+
+        /* STRUKTURA WYRAŻENIA LAMBDA: () -> {} */
+        /* () : tutaj podajemy argumenty, które chcemy przesłać do funkcji */
+        /* -> : informuje o tym, że mamy do czynienia z wyrażeniem Lambda */
+        /* {} : treść wyrażenia */
+
+        AfterClosingEvent acle = (int a, int b) ->
+        {
+            System.out.println("Sum = " + a + b);
+        };
+
     }
 }
 
 interface AfterClickEvent
 {
     void action();
+}
+
+interface AfterClosingEvent
+{
+    void closeAction(int a, int b);
 }
 
 class FirstButton implements AfterClickEvent
