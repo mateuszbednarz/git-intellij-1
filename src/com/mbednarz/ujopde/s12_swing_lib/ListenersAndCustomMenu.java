@@ -41,12 +41,13 @@ public class ListenersAndCustomMenu extends JFrame
 
     private int i = 0;
 
-    private class MenuButton extends JButton implements FocusListener
+    private class MenuButton extends JButton implements FocusListener, ActionListener
     {
         public MenuButton(String buttonName)
         {
             super(buttonName);
             this.addFocusListener(this);
+            this.addActionListener(this);
             this.addKeyListener(new KeyAdapter()
 
             /*   gdy naciśniemy na klawiaturze literę 'a' wywoływane są kolejno metody:
@@ -77,6 +78,12 @@ public class ListenersAndCustomMenu extends JFrame
             this.setBackground(cDefault);
         }
 
+        @Override
+        public void actionPerformed(ActionEvent e)
+        {
+            JOptionPane.showMessageDialog(this, ((MenuButton) e.getSource()).getText());
+        }
+
         private void keyPressedHandler(KeyEvent e)
         {
             int menuLength = menuPanel.getComponentCount();
@@ -93,9 +100,15 @@ public class ListenersAndCustomMenu extends JFrame
             }
             else if (e.getKeyCode() ==  KeyEvent.VK_UP)
             {
-
                 menuPanel.getComponent(--i % menuLength).requestFocus();
                 System.out.println(i);
+            }
+
+            else if (e.getKeyCode() ==  KeyEvent.VK_ENTER)
+            {
+                //MenuButton tmp_btn = (MenuButton) e.getSource();
+                //tmp_btn.doClick();
+                ((MenuButton) e.getSource()).doClick();
             }
         }
 
