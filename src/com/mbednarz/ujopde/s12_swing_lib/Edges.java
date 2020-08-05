@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
  */
 
 /* -- LESSON 75: Krawędzie -- */
+
 public class Edges extends JFrame
 {
     public Edges()

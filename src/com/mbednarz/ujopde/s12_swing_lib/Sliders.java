@@ -10,6 +10,9 @@ import java.awt.*;
  * @created 06/07/2020 - 14:33
  * @project git-intellij-1
  */
+
+/* -- LESSON 76: Paski przewijania -- */
+
 public class Sliders extends JFrame
 {
     public Sliders()
@@ -51,5 +54,6 @@ public class Sliders extends JFrame
     public static void main(String[] args)
     {
         new Sliders().setVisible(true);
+
     }
 }
