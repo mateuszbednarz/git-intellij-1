@@ -35,7 +35,7 @@ public class MenuBar extends JFrame
         newFileSubmenu.addActionListener(e -> System.out.println("New file creation implementation..."));
 
         fileMenu.addSeparator();
-        final Action sa = new SaveAction("Save", "We are saving changes clicking here...", "ctrl S", new ImageIcon("Save.gif"));
+        final Action sa = new SaveAction("Save", "We are saving changes clicking here...", "Ctrl S", new ImageIcon("Save.gif"));
         final JMenuItem saveSubmenu = fileMenu.add(sa);
         saveAllButton =  new JButton(sa);
         saveSubmenu.setToolTipText("Saving changes...");
